@@ -1,43 +1,222 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title>Your Very Handsome Website</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <title>Luxspace - Saingan IKEA</title>
+  <meta name="description" content="Menjual furniture" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <meta property="og:title" content="Luxspace - Saingan IKEA" />
+  <meta property="og:description" content="Menjual furniture" />
+  <meta property="og:url" content="https://luxspace.com" />
+  <meta property="og:image" content="https://luxspace.com/images/content/preview-homepage.jpg" />
 
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="images/content/favicon.png" />
-    <!-- Place favicon.ico in the root directory -->
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="apple-touch-icon" href="images/favicon.ico" />
+  <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="icon" href="images/content/favicon.png" />
+  <link rel="stylesheet" href="./css/app.minify.css" />
+  <link rel="icon" href="images/favicon.ico" />
 
-    <meta name="theme-color" content="#000" />
-  </head>
+  <meta name="theme-color" content="#000" />
+</head>
 
-  <body>
-    <!-- Add your site or application content here -->
+<body>
+  <!-- Add your site or application content here -->
 
-    <p>Hello World</p>
+  <!-- Start Header  -->
+  <header class="absolute w-full z-50 px-4">
+    <div class="container mx-auto py-10">
+      <div class="flex flex-stretch items-center"> 
+        <div class="w-56 flex items-center"> 
+          <img src="./images/design/logo.svg" alt="logo">
+        </div>
+        <div class="w-full"></div>
+        <!-- Start Menu Hamburger -->
+        <div class="w-auto">
+          <ul id="menu" class="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100">
+            <li class="mx-4 py-6 md:py-0">
+              <a href="#" class="text-black hover:text-white hover:underline">Showcase</a>
+            </li>
+            <li class="mx-4 py-6 md:py-0">
+              <a href="#" class="text-black hover:text-white hover:underline">Catalog </a>
+            </li>
+            <li class="mx-4 py-6 md:py-0">
+              <a href="#" class="text-black hover:text-white hover:underline">Delivery</a>
+            </li>
+            <li class="mx-4 py-6 md:py-0">
+              <a href="#" class="text-black hover:text-white hover:underline">Rewards</a>
+            </li>
+          </ul>
+        </div>
+         <!-- End Menu Hamburger -->
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+         <!-- Start Menu Toggler -->
+         <div class="w-auto">
+           <ul class="flex items-center">
+             <li class="ml-6 block md:hidden">
+              <button id="menu-toggler" class="relative flex z-50 items-center justify-center w-8 h-8 text-black focus:outline-none">
+                <svg class="fill-current" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="M15.9773 0.461304H1.04219C0.466585 0.461304 0 0.790267 0 1.19609C0 1.60192 0.466668 1.93088 1.04219 1.93088H15.9773C16.5529 1.93088 17.0195 1.60192 17.0195 1.19609C17.0195 0.790208 16.5529 0.461304 15.9773 0.461304Z"/>
+                  <path
+                  d="M15.9773 7.68802H1.04219C0.466585 7.68802 0 8.01698 0 8.42281C0 8.82864 0.466668 9.1576 1.04219 9.1576H15.9773C16.5529 9.1576 17.0195 8.82864 17.0195 8.42281C17.0195 8.01692 16.5529 7.68802 15.9773 7.68802Z"/>
+                  <path
+                  d="M15.9773 14.9147H1.04219C0.466585 14.9147 0 15.2437 0 15.6495C0 16.0553 0.466668 16.3843 1.04219 16.3843H15.9773C16.5529 16.3843 17.0195 16.0553 17.0195 15.6495C17.0195 15.2436 16.5529 14.9147 15.9773 14.9147Z"/>
+                </svg>
+              </button>
+            </li> 
+            <li class="ml-6">
+              <a id="header-cart" href="cart.html" class="flex items-center justify-center w-8 h-8 text-black hover:text-white cart cart-filled">
+                <svg class="fill-current" width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.8752 19.9824C9.6175 19.9824 8.59424 21.023 8.59424 22.3021C8.59424 23.5812 9.6175 24.6218 10.8752 24.6218C12.133 24.6218 13.1562 23.5812 13.1562 22.3021C13.1562 21.023 12.1329 19.9824 10.8752 19.9824ZM10.8752 23.3265C10.3197 23.3265 9.86784 22.8669 9.86784 22.302C9.86784 21.7371 10.3198 21.2775 10.8752 21.2775C11.4307 21.2775 11.8826 21.7371 11.8826 22.302C11.8826 22.867 11.4307 23.3265 10.8752 23.3265Z"
+                    />
+                  <path
+                    d="M18.8763 19.9824C17.6185 19.9824 16.5952 21.023 16.5952 22.3021C16.5952 23.5812 17.6185 24.6218 18.8763 24.6218C20.1341 24.6218 21.1573 23.5812 21.1573 22.3021C21.1573 21.023 20.134 19.9824 18.8763 19.9824ZM18.8763 23.3265C18.3208 23.3265 17.8689 22.8669 17.8689 22.302C17.8689 21.7371 18.3208 21.2775 18.8763 21.2775C19.4318 21.2775 19.8837 21.7371 19.8837 22.302C19.8837 22.867 19.4317 23.3265 18.8763 23.3265Z"
+                    />
+                  <path
+                    d="M19.4379 7.76947H10.3121C9.96039 7.76947 9.67529 8.0594 9.67529 8.41707C9.67529 8.77474 9.96044 9.06467 10.3121 9.06467H19.4379C19.7896 9.06467 20.0747 8.77474 20.0747 8.41707C20.0747 8.05935 19.7896 7.76947 19.4379 7.76947Z"
+                    />
+                  <path
+                    d="M18.9414 11.1324H10.8089C10.4572 11.1324 10.1721 11.4223 10.1721 11.78C10.1721 12.1377 10.4572 12.4276 10.8089 12.4276H18.9413C19.293 12.4276 19.5781 12.1377 19.5781 11.78C19.5781 11.4224 19.293 11.1324 18.9414 11.1324Z"
+                    />
+                  <path
+                    d="M25.6499 4.88404C25.407 4.58092 25.0472 4.40711 24.6626 4.40711H4.82655L4.42595 2.42947C4.34232 2.01694 4.06563 1.67055 3.68565 1.50276L0.890528 0.268963C0.567841 0.126419 0.192825 0.276999 0.0528584 0.60505C-0.0872597 0.933204 0.0608116 1.31463 0.383347 1.45696L3.17852 2.69081L6.2598 17.9014C6.38117 18.5004 6.90578 18.9352 7.50723 18.9352H22.7635C23.1152 18.9352 23.4003 18.6452 23.4003 18.2876C23.4003 17.9299 23.1152 17.64 22.7635 17.64H7.50728L7.13247 15.7897H22.8814C23.4828 15.7897 24.0075 15.3549 24.1288 14.7559L25.9101 5.96349C25.9876 5.58063 25.8928 5.1871 25.6499 4.88404ZM22.8814 14.4946H6.87012L5.08895 5.70226L24.6626 5.70231L22.8814 14.4946Z"
+                    />
+                  <circle cx="25" cy="4.89023" r="4" fill="#F9CADA" class="fill-current dot" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Menu Toggler -->
+      </div>
+    </div>
+  </header>
+  <!-- End Header  -->
+
+  <!-- Start Hero  -->
+  <section class="hero flex items-center">
+    <!-- Hero Left Side  -->
+    <div
+        class="hero-caption w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center"
+      >
+        <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
+          The Room <br class="" />You've Dreaming
+        </h1>
+        <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
+          Kami menyediakan furniture berkelas yang
+          <br class="hidden lg:block" />
+          membuat ruangan terasa homey
+        </h2>
+        <div>
+          <a
+            href="#browse-the-room"
+            class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200"
+            >Explore Now</a
+          >
+        </div>
+      </div>
+    <!-- End Hero Left Side  -->
+    <!-- Hero Right Side  -->
+    <div class="w-full inset-0 md:relative md:w-1/2">
+      <div class="hero-image relative">
+        <div class="overlay inset-0 bg-black opacity-30 z-10 md:rounded-bl-2xl"></div>
+        <div class="overlay right-0 bottom-0 md:inset-0">
+          <button class="video hero-cta focus:outline-none z-30 modal-trigger" data-content='<div class="w-screen pb-56 md:w-80 relative z-50">
+      <div class="absolute w-full h-full">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FniJvUiVprg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>'></button>
+        </div>
+        <img class="absolute inset-0 md:rounded-bl-2xl md:relative w-full h-full object-cover object-center"
+          src="images/content/image-hero.jpg" alt="House with sofa and some plants" />
+      </div>
+    </div>
+    <!-- End Hero Right Side  -->
+  </section>
+  <!-- End Hero  -->
+  
+  <!-- Start Browse The Room  -->
+  <section class="flex py-16 px-4 bg-gray-50" id="browse-the-room">
+    <div class="container mx-auto">
+      <div class="flex flex-start mb-6">
+        <h3 class="text-2xl capitalize font-semibold text-gray-900">Browse The Room <br class=""/>that we design for you</h3>
+      </div>
+      <div class="grid grid-rows-2 grid-cols-9 gap-4">
+        <!-- Start Item 1  -->
+        <div class="relative col-span-9 row-span-1 md:col-span-4 card" style="height: 180px;">
+          <div class="card-shadow rounded-xl">
+            <img src="../images/content/image-catalog-1.jpg" class="w-full h-full object-cover overlay overflow-hidden rounded-xl">
+          </div>
+          <div class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72">
+            <h5 class="text-lg font-semibold">Living Room</h5>
+            <span class="">18.000 items</span>
+          </div>
+          <a href="detail.html" class="stretched-link"></a>
+        </div>
+        <!-- End Item 1  -->
+        <!-- Start Item 2  -->
+        <div class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card">
+          <div class="card-shadow rounded-xl">
+            <img src="../images/content/image-catalog-4.jpg"
+              class="w-full h-full object-cover overlay overflow-hidden rounded-xl">
+          </div>
+          <div class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12">
+            <h5 class="text-lg font-semibold">Decoration</h5>
+            <span class="">77.392 items</span>
+          </div>
+          <a href="detail.html" class="stretched-link"></a>
+        </div>
+        <!-- End Item 2  -->
+        <!-- Start Item 3  -->
+        <div class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card">
+          <div class="card-shadow rounded-xl">
+            <img src="../images/content/image-catalog-3.jpg"
+              class="w-full h-full object-cover overlay overflow-hidden rounded-xl">
+          </div>
+          <div class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12">
+            <h5 class="text-lg font-semibold">Bedroom</h5>
+            <span class="">77.392 items</span>
+          </div>
+          <a href="detail.html" class="stretched-link"></a>
+        </div>
+        <!-- End Item 3  -->
+        <!-- Start Item 2  -->
+        <div class="relative col-span-9 row-span-1 md:col-span-4 card" style="height: 180px;">
+          <div class="card-shadow rounded-xl">
+            <img src="../images/content/image-catalog-2.jpg"
+              class="w-full h-full object-cover overlay overflow-hidden rounded-xl">
+          </div>
+          <div class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72">
+            <h5 class="text-lg font-semibold">Children Room</h5>
+            <span class="">802 items</span>
+          </div>
+          <a href="detail.html" class="stretched-link"></a>
+        </div>
+        <!-- End Item 2  -->
+      </div>
+    </div>
+
+  </section>
+  <!-- End Browse The Room  -->
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments);
+    };
+    ga.q = [];
+    ga.l = +new Date();
+    ga("create", "UA-XXXXX-Y", "auto");
+    ga("set", "anonymizeIp", true);
+    ga("set", "transport", "beacon");
+    ga("send", "pageview");
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>
