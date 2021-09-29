@@ -26,7 +26,7 @@
   <!-- Add your site or application content here -->
 
   <!-- Start Header  -->
-  <header class="absolute w-full z-50 px-4">
+  <header class="w-full z-50 px-4">
     <div class="container mx-auto py-10">
       <div class="flex flex-stretch items-center">
         <div class="w-56 flex items-center">
@@ -38,16 +38,16 @@
           <ul id="menu"
             class="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100">
             <li class="mx-4 py-6 md:py-0">
-              <a href="#" class="text-black hover:text-white hover:underline">Showcase</a>
+              <a href="#" class="text-black hover:underline">Showcase</a>
             </li>
             <li class="mx-4 py-6 md:py-0">
-              <a href="#" class="text-black hover:text-white hover:underline">Catalog </a>
+              <a href="#" class="text-black hover:underline">Catalog </a>
             </li>
             <li class="mx-4 py-6 md:py-0">
-              <a href="#" class="text-black hover:text-white hover:underline">Delivery</a>
+              <a href="#" class="text-black hover:underline">Delivery</a>
             </li>
             <li class="mx-4 py-6 md:py-0">
-              <a href="#" class="text-black hover:text-white hover:underline">Rewards</a>
+              <a href="#" class="text-black hover:underline">Rewards</a>
             </li>
           </ul>
         </div>
@@ -72,7 +72,7 @@
             </li>
             <li class="ml-6">
               <a id="header-cart" href="cart.html"
-                class="flex items-center justify-center w-8 h-8 text-black hover:text-white cart cart-filled">
+                class="flex items-center justify-center w-8 h-8 text-black cart cart-filled">
                 <svg class="fill-current" width="29" height="25" viewBox="0 0 29 25" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -99,207 +99,192 @@
   </header>
   <!-- End Header  -->
 
-  <!-- Start Hero  -->
-  <section class="hero flex items-center">
-    <!-- Hero Left Side  -->
-    <div
-      class="hero-caption w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center">
-      <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
-        The Room <br class="" />You've Dreaming
-      </h1>
-      <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
-        Kami menyediakan furniture berkelas yang
-        <br class="hidden lg:block" />
-        membuat ruangan terasa homey
-      </h2>
-      <div>
-        <a href="#browse-the-room"
-          class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200 font-semibold">Explore
-          Now</a>
-      </div>
-    </div>
-    <!-- End Hero Left Side  -->
-    <!-- Hero Right Side  -->
-    <div class="w-full inset-0 md:relative md:w-1/2">
-      <div class="hero-image relative">
-        <div class="overlay inset-0 bg-black opacity-30 z-10 md:rounded-bl-2xl"></div>
-        <div class="overlay right-0 bottom-0 md:inset-0">
-          <button class="video hero-cta focus:outline-none z-30 modal-trigger" data-content='<div class="w-screen pb-56 md:w-80 relative z-50">
-      <div class="absolute w-full h-full">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FniJvUiVprg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>'></button>
-        </div>
-        <img class="absolute inset-0 md:rounded-bl-2xl md:relative w-full h-full object-cover object-center"
-          src="images/content/image-hero.jpg" alt="House with sofa and some plants" />
-      </div>
-    </div>
-    <!-- End Hero Right Side  -->
-  </section>
-  <!-- End Hero  -->
-
-  <!-- Start Browse The Room  -->
-  <section class="flex py-16 px-4 bg-gray-50" id="browse-the-room">
+  <!-- Start Breadcrumb  -->
+  <section class="bg-gray-100 py-6 px-4">
     <div class="container mx-auto">
-      <div class="flex flex-start mb-6">
-        <h3 class="text-2xl capitalize font-semibold text-gray-900">Browse The Room <br class="" />that we design for
-          you</h3>
+      <ul class="breadcrumb">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="" aria-label="current-page">Shopping Cart</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Breadcrumb  -->
+
+  <!-- Start Details  -->
+    <section class="container mx-auto">
+      <div class="flex flex-wrap my-4 md:my-12">
+        <div class="w-full md:hidden px-4">
+          <h2 class="text-5xl font-semibold">Chair Thatty</h2>
+          <span class="text-xl">IDR 12.000.000</span>
+        </div>
+        <div class="flex-1">
+          <div class="slider">
+            <div class="thumbnail">
+              <!-- START: slideshow thumbnail item 1 -->
+              <div class="px-2">
+                <div class="item selected" data-img="./images/content/chair1.jpg">
+                  <img src="./images/content/chair1.jpg" alt="chair side" class="object-cover w-full h-full rounded-lg" />
+                </div>
+              </div>
+              <!-- END: slideshow thumbnail item 1 -->
+    
+              <!-- START: slideshow thumbnail item 2 -->
+              <div class="px-2">
+                <div class="item" data-img="./images/content/chair2.jpeg">
+                  <img src="./images/content/chair2.jpeg" alt="chair side" class="object-cover w-full h-full rounded-lg" />
+                </div>
+              </div>
+              <!-- END: slideshow thumbnail item 2 -->
+    
+              <!-- START: slideshow thumbnail item 3 -->
+              <div class="px-2">
+                <div class="item" data-img="./images/content/chair1.jpg">
+                  <img src="./images/content/chair1.jpg" alt="chair side" class="object-cover w-full h-full rounded-lg" />
+                </div>
+              </div>
+              <!-- END: slideshow thumbnail item 3 -->
+    
+              <!-- START: slideshow thumbnail item 4 -->
+              <div class="px-2">
+                <div class="item" data-img="./images/content/chair1.jpg">
+                  <img src="./images/content/chair1.jpg" alt="chair side" class="object-cover w-full h-full rounded-lg" />
+                </div>
+              </div>
+              <!-- END: slideshow thumbnail item 4 -->
+    
+              <!-- START: slideshow thumbnail item 5 -->
+              <div class="px-2">
+                <div class="item" data-img="./images/content/chair1.jpg">
+                  <img src="./images/content/chair1.jpg" alt="chair side" class="object-cover w-full h-full rounded-lg" />
+                </div>
+              </div>
+              <!-- END: slideshow thumbnail item 5 -->
+            </div>
+            <div class="preview">
+              <div class="item rounded-lg h-full overflow-hidden">
+                <img src="./images/content/chair1.jpg" alt="" class="object-cover w-full h-full rounded-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 px-4 md:p-6">
+          <div class="hidden md:block">
+            <h2 class="text-5xl font-semibold">Chair Thatty</h2>
+            <p class="text-xl">IDR 12.000.000</p>
+          </div>
+    
+          <a href="cart.html"
+            class="transition-all duration-200 bg-pink-400 text-black focus:bg-black focus:text-pink-400  hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-flex w-full md:w-auto justify-center">
+            <svg class="fill-current mr-3" width="26" height="25" viewBox="0 0 26 25" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.8754 19.9824C9.61762 19.9824 8.59436 21.023 8.59436 22.3021C8.59436 23.5812 9.61762 24.6218 10.8754 24.6218C12.1331 24.6218 13.1564 23.5812 13.1564 22.3021C13.1563 21.023 12.1331 19.9824 10.8754 19.9824ZM10.8754 23.3265C10.3199 23.3265 9.86796 22.8669 9.86796 22.302C9.86796 21.7371 10.3199 21.2775 10.8754 21.2775C11.4308 21.2775 11.8828 21.7371 11.8828 22.302C11.8828 22.867 11.4308 23.3265 10.8754 23.3265Z" />
+              <path
+                d="M18.8764 19.9824C17.6186 19.9824 16.5953 21.023 16.5953 22.3021C16.5953 23.5812 17.6186 24.6218 18.8764 24.6218C20.1342 24.6218 21.1575 23.5812 21.1575 22.3021C21.1574 21.023 20.1341 19.9824 18.8764 19.9824ZM18.8764 23.3265C18.3209 23.3265 17.869 22.8669 17.869 22.302C17.869 21.7371 18.3209 21.2775 18.8764 21.2775C19.4319 21.2775 19.8838 21.7371 19.8838 22.302C19.8838 22.867 19.4319 23.3265 18.8764 23.3265Z" />
+              <path
+                d="M19.438 7.76929H10.3122C9.96051 7.76929 9.67542 8.05921 9.67542 8.41689C9.67542 8.77456 9.96056 9.06448 10.3122 9.06448H19.438C19.7897 9.06448 20.0748 8.77456 20.0748 8.41689C20.0748 8.05916 19.7897 7.76929 19.438 7.76929Z" />
+              <path
+                d="M18.9414 11.1323H10.8089C10.4572 11.1323 10.1721 11.4223 10.1721 11.7799C10.1721 12.1376 10.4572 12.4275 10.8089 12.4275H18.9413C19.293 12.4275 19.5781 12.1376 19.5781 11.7799C19.5781 11.4223 19.293 11.1323 18.9414 11.1323Z" />
+              <path
+                d="M25.6499 4.88395C25.407 4.58083 25.0472 4.40701 24.6626 4.40701H4.82655L4.42595 2.42938C4.34232 2.01685 4.06563 1.67046 3.68565 1.50267L0.890528 0.268871C0.567841 0.126328 0.192825 0.276908 0.0528584 0.604959C-0.0872597 0.933113 0.0608116 1.31453 0.383347 1.45687L3.17852 2.69072L6.2598 17.9013C6.38117 18.5003 6.90578 18.9351 7.50723 18.9351H22.7635C23.1152 18.9351 23.4003 18.6451 23.4003 18.2875C23.4003 17.9298 23.1152 17.6399 22.7635 17.6399H7.50728L7.13247 15.7896H22.8814C23.4828 15.7896 24.0075 15.3548 24.1288 14.7558L25.9101 5.9634C25.9876 5.58054 25.8928 5.18701 25.6499 4.88395ZM22.8814 14.4945H6.87012L5.08895 5.70217L24.6626 5.70222L22.8814 14.4945Z" />
+            </svg>
+            Add to Cart
+          </a>
+    
+          <hr class="my-8" />
+    
+          <h6 class="text-xl font-semibold mb-4">About the product:</h6>
+          <p class="text-xl leading-7 mb-6">
+            Tailored to a level of perfection synonymous with that of a Savile
+            Row suit and with understated quality in the detail, Jetty has been
+            influenced by timeless 1950s style.
+          </p>
+          <p class="text-xl leading-7 mb-6">
+            Providing a subtle nod to the past, Jetty also provides a perfect
+            solution for the way we work today. A comprehensive product family,
+            Jetty features a variety of elegant chairs and sofas.
+          </p>
+        </div>
       </div>
-      <div class="grid grid-rows-2 grid-cols-9 gap-4">
+    </section>
+  <!-- End Start Details  -->
+
+  <!-- Start Recomendation  -->
+  <section class="bg-gray-100 px-4 py-16">
+    <div class="container mx-auto">
+      <div class="flex flex-start mb-8">
+        <h3 class="text-2xl capitalize font-semibold">
+          complete your room <br class="" />with what we designed
+        </h3>
+      </div>
+      <div class="flex flex-wrap overflow-x-auto mb-4 -mx-3">
         <!-- Start Item 1  -->
-        <div class="relative col-span-9 row-span-1 md:col-span-4 card" style="height: 180px;">
-          <div class="card-shadow rounded-xl">
-            <img src="../images/content/image-catalog-1.jpg"
-              class="w-full h-full object-cover overlay overflow-hidden rounded-xl">
+        <div class="px-3 w-full md:w-3/12 mb-4">
+          <div class="rounded-xl p-4 pb-8 relative bg-white">
+            <div class="rounded-xl overflow-hidden card-shadow w-full h-48">
+              <img src="./images/content/chair-office-1.jpg" alt="chair 1" class="w-full h-full object-cover object-center" />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Office Chair 2xl</h5>
+            <span class="">IDR 89.300.000</span>
+            <a href="details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
           </div>
-          <div class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-56 md:pl-72">
-            <h5 class="text-lg font-semibold">Living Room</h5>
-            <span class="">18.000 items</span>
-          </div>
-          <a href="details.html" class="stretched-link"></a>
         </div>
         <!-- End Item 1  -->
+
         <!-- Start Item 2  -->
-        <div class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card">
-          <div class="card-shadow rounded-xl">
-            <img src="../images/content/image-catalog-4.jpg"
-              class="w-full h-full object-cover overlay overflow-hidden rounded-xl">
+        <div class="px-3 w-full md:w-3/12 mb-4">
+          <div class="rounded-xl p-4 pb-8 relative bg-white">
+            <div class="rounded-xl overflow-hidden card-shadow w-full h-48">
+              <img src="./images/content/chair-office-2.jpg" alt="chair 2" class="w-full h-full object-cover object-center" />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Office Chair 2xl</h5>
+            <span class="">IDR 89.300.000</span>
+            <a href="details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
           </div>
-          <div
-            class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-56 md:pl-0 pt-0 md:pt-12">
-            <h5 class="text-lg font-semibold">Decoration</h5>
-            <span class="">77.392 items</span>
-          </div>
-          <a href="details.html" class="stretched-link"></a>
         </div>
         <!-- End Item 2  -->
+
         <!-- Start Item 3  -->
-        <div class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card">
-          <div class="card-shadow rounded-xl">
-            <img src="../images/content/image-catalog-3.jpg"
-              class="w-full h-full object-cover overlay overflow-hidden rounded-xl">
+        <div class="px-3 w-full md:w-3/12 mb-4">
+          <div class="rounded-xl p-4 pb-8 relative bg-white">
+            <div class="rounded-xl overflow-hidden card-shadow w-full h-48">
+              <img src="./images/content/chair-office-3.jpg" alt="chair 3" class="w-full h-full object-cover object-center" />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Office Chair 2xl</h5>
+            <span class="">IDR 89.300.000</span>
+            <a href="details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
           </div>
-          <div
-            class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-56 md:pl-0 pt-0 md:pt-12">
-            <h5 class="text-lg font-semibold">Bedroom</h5>
-            <span class="">77.392 items</span>
-          </div>
-          <a href="details.html" class="stretched-link"></a>
         </div>
         <!-- End Item 3  -->
-        <!-- Start Item 2  -->
-        <div class="relative col-span-9 row-span-1 md:col-span-4 card" style="height: 180px;">
-          <div class="card-shadow rounded-xl">
-            <img src="../images/content/image-catalog-2.jpg"
-              class="w-full h-full object-cover overlay overflow-hidden rounded-xl">
+
+        <!-- Start Item 4  -->
+        <div class="px-3 w-full md:w-3/12 mb-4">
+          <div class="rounded-xl p-4 pb-8 relative bg-white">
+            <div class="rounded-xl overflow-hidden card-shadow w-full h-48">
+              <img src="./images/content/chair-office-4.jpg" alt="chair 4" class="w-full h-full object-cover object-center" />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Office Chair 2xl</h5>
+            <span class="">IDR 89.300.000</span>
+            <a href="details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
           </div>
-          <div class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-56 md:pl-72">
-            <h5 class="text-lg font-semibold">Children Room</h5>
-            <span class="">802 items</span>
-          </div>
-          <a href="details.html" class="stretched-link"></a>
         </div>
-        <!-- End Item 2  -->
+        <!-- End Item 4  -->
       </div>
     </div>
   </section>
-  <!-- End Browse The Room  -->
-
-  <!-- Start Just Arrived -->
-  <section class="flex flex-col py-16">
-    <div class="container mx-auto mb-4">
-      <div class="flex justify-center text-center mb-4">
-        <h3 class="text-2xl font-semibold capitalize">Just Arrived <br class="" /> This Summer For You</h3>
-      </div>
-
-    </div>
-    <div class="overflow-x-hidden px-4" id="carousel">
-      <div class="container mx-auto">
-        <div class="flex -mx-4 flex-row relative">
-          <!-- Start Item 1  -->
-          <div class="px-4 relative card">
-            <div class="rounded-xl overflow-hidden card-shadow" style="width: 287px; height: 386px;">
-              <img src="./images/content/img-carousel-1.jpg" class="w-full h-full object-cover object-center" />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Cangkir Mauttie</h5>
-            <span class="">IDR 89.300</span>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- End Item 1  -->
-          <!-- Start Item 2  -->
-          <div class="px-4 relative card">
-            <div class="rounded-xl overflow-hidden card-shadow" style="width: 287px; height: 386px;">
-              <img src="./images/content/img-carousel-2.jpg" class="w-full h-full object-cover object-center" />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Bankyu Minimax</h5>
-            <span class="">IDR 67.999</span>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- End Item 2  -->
-          <!-- Start Item 3  -->
-          <div class="px-4 relative card">
-            <div class="rounded-xl overflow-hidden card-shadow" style="width: 287px; height: 386px;">
-              <img src="./images/content/img-carousel-3.jpg" class="w-full h-full object-cover object-center" />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Buku Sidu Edition</h5>
-            <span class="">IDR 12.089.300</span>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- End Item 3  -->
-          <!-- Start Item 4  -->
-          <div class="px-4 relative card">
-            <div class="rounded-xl overflow-hidden card-shadow" style="width: 287px; height: 386px;">
-              <img src="./images/content/img-carousel-4.jpg" class="w-full h-full object-cover object-center" />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Watch Notes X</h5>
-            <span class="">IDR 7.600.300</span>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- End Item 4  -->
-          <!-- Start Item 5  -->
-          <div class="px-4 relative card">
-            <div class="rounded-xl overflow-hidden card-shadow" style="width: 287px; height: 386px;">
-              <img src="./images/content/img-carousel-5.jpg" class="w-full h-full object-cover object-center" />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Racking Plant</h5>
-            <span class="">IDR 5.600.300</span>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- End Item 5  -->
-          <!-- Start Item 6  -->
-          <div class="px-4 relative card">
-            <div class="rounded-xl overflow-hidden card-shadow" style="width: 287px; height: 386px;">
-              <img src="./images/content/img-carousel-5.jpg" class="w-full h-full object-cover object-center" />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Racking Plant</h5>
-            <span class="">IDR 5.600.300</span>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- End Item 6  -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Just Arrived -->
-
-  <!-- Start Client List  -->
-  <section class="container mx-auto py-8">
-    <div class="flex justify-center flex-wrap">
-      <div class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0">
-        <img src="./images/content/logo-adobe.png" alt="brand" class="mx-auto" />
-      </div>
-      <div class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0">
-        <img src="./images/content/logo-ikea.png" alt="brand" class="mx-auto" />
-      </div>
-      <div class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0">
-        <img src="./images/content/logo-herman-miller.png" alt="brand" class="mx-auto" />
-      </div>
-      <div class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0">
-        <img src="./images/content/logo-miele.png" alt="brand" class="mx-auto" />
-      </div>
-    </div>
-  </section>
-  <!-- End Client List  -->
+  <!-- End Recomendation  -->
 
   <!-- Start Footer Menu -->
   <section class="">
